@@ -1,0 +1,15 @@
+FROM postgres:15
+
+WORKDIR /app
+
+COPY . .
+
+ENV POSTGRES_USER=johnson202
+
+ENV POSTGRES_PASSWORD=password123
+
+ENV POSTGRES_DB=cp_db
+
+EXPOSE 5432
+
+CMD ["postgres"]

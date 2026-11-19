@@ -42,6 +42,11 @@ Postgres supports multiple databases. So when we interact with the server, we'll
 $ createdb database_name_goes_here
 ```
 
+for WSL users:
+```
+$ sudo -u postgres createdb database_name_goes_here
+```
+
 Create a database named `school`. Confirm it exists by connecting to it with the `psql` command and listing the tables with the `\d` command. You should see output like so:
 
 ```
